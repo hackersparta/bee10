@@ -5,450 +5,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatGPT for Professionals Workshop - GrowthSchool</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #FFFFFF; color: #1a1a1a; }
-        .text-gradient { background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .section-bg { background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%); }
-        .dark-section { background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); color: white; }
-        .purple-gradient { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%); }
-        .orange-gradient { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
-        .btn-primary { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; }
-        .btn-primary:hover { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
-        .card-white { background: white; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
-        .hover-lift { transition: all 0.3s ease; }
-        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .star { color: #fbbf24; }
-    </style>
+    <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a1a}</style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white">
     <!-- Top Banner -->
-    <div class="bg-orange-gradient text-white py-3 px-4 text-center">
-        <p class="font-semibold text-sm md:text-base">📅 21st-22nd Feb | ⏰ 10 AM to 7 PM IST | 🎯 Limited Seats Available!</p>
+    <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3">
+        <div class="flex items-center justify-center gap-2 text-sm"><span>⭐</span><span>Limited Period offer</span><span>⭐</span><span class="font-bold">Flat 90% Off</span><span>⭐</span></div>
     </div>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="text-2xl font-bold text-gray-900">Growth<span class="text-purple-600">School</span></div>
-            <nav class="hidden md:flex items-center gap-6">
-                <a href="#" class="text-gray-600 hover:text-purple-600 transition">Workshops</a>
-                <a href="#" class="text-gray-600 hover:text-purple-600 transition">Mentors</a>
-                <a href="#" class="text-gray-600 hover:text-purple-600 transition">About</a>
-                <a href="#" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
-            </nav>
-            <a href="#register" class="purple-gradient text-white px-6 py-2 rounded-full font-semibold hover-lift">Join Now</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="section-bg py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full mb-6">
-                <i class="fas fa-bolt"></i>
-                <span class="font-semibold">LIVE WORKSHOP</span>
-            </div>
-            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                Learn 25+ AI Tools to Save Time, Money, and <span class="text-gradient">Supercharge Your Skills</span>
-            </h1>
-            <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-                This hands-on AI workshop transforms you into an AI power user who can build automated workflows, create professional content in minutes, and launch AI-powered apps—giving you the competitive edge that makes you irreplaceable in any industry.
-            </p>
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-white -z-10"></div>
+        <div class="max-w-5xl mx-auto px-4 py-12 text-center">
+            <div class="mb-8"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ4IiBmaWxsPSIjZmZkMjY0Ii8+PHRleHQgeD0iNTAiIHk9IjU1IiBmb250LXNpemU9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RzwvdGV4dD48L3N2Zz4=" alt="Logo" class="w-16 h-16 mx-auto"></div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Learn 25+ AI Tools to Save Time, Money, and <span class="text-purple-600">Supercharge Your Skills</span></h1>
+            <p class="text-lg text-gray-600 mb-8">This hands-on AI workshop transforms you into an AI power user who can build automated workflows, create professional content in minutes, and launch AI-powered apps.</p>
             
-            <!-- Dates -->
             <div class="flex flex-wrap justify-center gap-6 mb-8">
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100">
-                    <p class="text-sm text-gray-500 mb-1">21st Feb Saturday</p>
-                    <p class="text-xl font-bold text-gray-900">10 AM to 7 PM IST</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100">
-                    <p class="text-sm text-gray-500 mb-1">22nd Feb Sunday</p>
-                    <p class="text-xl font-bold text-gray-900">10 AM to 7 PM IST</p>
-                </div>
+                <div class="bg-white shadow-lg rounded-xl p-4 flex items-center gap-3"><i class="fas fa-calendar text-purple-600 text-xl"></i><div class="text-left"><p class="text-sm text-gray-500">21st Feb Saturday</p><p class="font-bold">10 AM to 7 PM IST</p></div></div>
+                <div class="bg-white shadow-lg rounded-xl p-4 flex items-center gap-3"><i class="fas fa-calendar text-purple-600 text-xl"></i><div class="text-left"><p class="text-sm text-gray-500">22nd Feb Sunday</p><p class="font-bold">10 AM to 7 PM IST</p></div></div>
             </div>
             
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#register" class="purple-gradient text-white px-8 py-4 rounded-full font-bold text-lg hover-lift shadow-lg">
-                    Reserve Your Seat Now →
-                </a>
+            <div class="relative max-w-3xl mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?w=800" alt="Video" class="w-full h-80 object-cover">
+                <button class="absolute inset-0 flex items-center justify-center bg-black/30"><div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fas fa-play text-purple-600 text-2xl ml-1"></i></div></button>
             </div>
+            
+            <a href="#pricing" class="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg">Join Now</a>
         </div>
     </section>
 
-    <!-- Ratings Section -->
-    <section class="py-12 bg-white border-y border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-gray-600 mb-6 font-semibold">Rated</p>
+    <!-- Ratings -->
+    <section class="py-10 bg-gradient-to-br from-purple-50 to-white">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <p class="text-gray-500 uppercase tracking-wide text-sm mb-6">Rated</p>
             <div class="flex flex-wrap justify-center gap-12">
-                <div class="text-center">
-                    <div class="flex items-center gap-1 mb-2 justify-center">
-                        <span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span>
-                    </div>
-                    <p class="text-3xl font-bold text-gray-900">4.7/5</p>
-                    <p class="text-gray-500">(5625)</p>
-                    <p class="text-purple-600 font-semibold mt-1">Trustpilot</p>
-                </div>
-                <div class="text-center">
-                    <div class="flex items-center gap-1 mb-2 justify-center">
-                        <span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span><span class="star text-2xl">★</span>
-                    </div>
-                    <p class="text-3xl font-bold text-gray-900">4.4/5</p>
-                    <p class="text-gray-500">(3704)</p>
-                    <p class="text-purple-600 font-semibold mt-1">Google Reviews</p>
-                </div>
+                <div><div class="flex gap-1 mb-2 justify-center"><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i></div><p class="text-3xl font-bold">4.7/5 (5625)</p><p class="text-purple-600 font-semibold">Trustpilot</p></div>
+                <div><div class="flex gap-1 mb-2 justify-center"><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star text-yellow-400 text-xl"></i><i class="fas fa-star-half-alt text-yellow-400 text-xl"></i></div><p class="text-3xl font-bold">4.4/5 (3704)</p><p class="text-purple-600 font-semibold">Google Reviews</p></div>
             </div>
         </div>
     </section>
 
     <!-- Social Proof -->
-    <section class="py-8 bg-purple-50">
+    <section class="py-12 bg-white border-y border-gray-100">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-purple-700 font-semibold mb-4">Join who have successfully completed the program to become an AI-powered professional</p>
+            <h2 class="text-xl text-gray-700 mb-4">Join who have successfully completed the program to become an AI-powered professional</h2>
             <p class="text-4xl font-bold text-purple-600">2 Million+ Global Learners</p>
         </div>
     </section>
 
     <!-- Featured In -->
     <section class="py-10 bg-white">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <p class="text-gray-500 mb-6 font-semibold uppercase tracking-wide">Featured In</p>
-            <div class="flex flex-wrap justify-center items-center gap-10 opacity-60 grayscale">
-                <span class="text-2xl font-bold text-gray-400">Forbes</span>
-                <span class="text-2xl font-bold text-gray-400">TechCrunch</span>
-                <span class="text-2xl font-bold text-gray-400">YourStory</span>
-                <span class="text-2xl font-bold text-gray-400">Inc42</span>
-            </div>
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-gray-500 uppercase tracking-wide text-sm mb-6">Featured In</p>
+            <div class="flex flex-wrap justify-center items-center gap-8"><span class="text-xl font-bold text-gray-400">Forbes</span><span class="text-xl font-bold text-gray-400">TechCrunch</span><span class="text-xl font-bold text-gray-400">YourStory</span><span class="text-xl font-bold text-gray-400">Inc42</span></div>
         </div>
     </section>
 
-    <!-- Learn 25+ AI Tools Banner -->
-    <section class="py-16 purple-gradient text-white">
+    <!-- AI Tools -->
+    <section class="py-12 bg-gradient-to-b from-purple-50 to-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Learn 25+ AI Tools</h2>
-            <p class="text-xl opacity-90">Master the tools that power the future</p>
+            <h2 class="text-3xl font-bold mb-8">Learn 25+ AI Tools</h2>
+            <div class="flex flex-wrap justify-center gap-6"><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-robot text-purple-600 text-2xl"></i></div><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-magic text-purple-600 text-2xl"></i></div><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-brain text-purple-600 text-2xl"></i></div><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-comments text-purple-600 text-2xl"></i></div><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-paint-brush text-purple-600 text-2xl"></i></div><div class="bg-white p-4 rounded-xl shadow-md"><i class="fas fa-code text-purple-600 text-2xl"></i></div></div>
         </div>
     </section>
 
     <!-- What You'll Learn -->
-    <section class="py-16 section-bg px-4">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Here's What You'll Learn in the</h2>
-                <p class="text-3xl font-bold text-gradient">2-Day AI Mastermind</p>
-            </div>
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10"><h2 class="text-3xl font-bold text-gray-900 mb-2">Here's What You'll Learn in the</h2><h2 class="text-3xl font-bold text-purple-600">2-Day AI Mastermind</h2></div>
             
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-brain"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Understanding Generative AI & Prompt Engineering</h3>
-                        <p class="text-gray-500 text-sm">Master the fundamentals of AI and learn effective prompting techniques</p>
-                    </div>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggle(this)">
+                        <div class="flex items-center gap-4"><i class="fas fa-brain text-purple-600 text-xl"></i><span class="font-semibold">Understanding Generative AI & Prompt Engineering</span></div>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-gray-50"><ul class="space-y-2 text-gray-600 text-sm"><li>Gain a deep, working knowledge of how generative AI models like ChatGPT, Claude, and Gemini function.</li><li>Learn the key principles of prompt engineering to get precise, high-quality outputs from any AI tool.</li><li>Understand how to effectively communicate with AI for generating content, code, images, or strategy ideas.</li></ul></div>
                 </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-comments"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">ChatGPT and 20+ AI Tools</h3>
-                        <p class="text-gray-500 text-sm">Explore and master the most powerful AI tools available</p>
-                    </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggle(this)">
+                        <div class="flex items-center gap-4"><i class="fas fa-comments text-purple-600 text-xl"></i><span class="font-semibold">ChatGPT and 20+ AI Tools</span></div>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-gray-50"><ul class="space-y-2 text-gray-600 text-sm"><li>Explore a curated set of 20+ powerful AI tools designed to save you hours of manual work.</li><li>From writing and research to brainstorming, task management, and design.</li><li>Learn how to integrate them into your daily workflow for maximum efficiency.</li></ul></div>
                 </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-pen-nib"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Create AI-Powered Writing Assistants</h3>
-                        <p class="text-gray-500 text-sm">Build custom AI writing tools for your specific needs</p>
-                    </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggle(this)">
+                        <div class="flex items-center gap-4"><i class="fas fa-pen text-purple-600 text-xl"></i><span class="font-semibold">Create AI-Powered Writing Assistants</span></div>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-gray-50"><ul class="space-y-2 text-gray-600 text-sm"><li>Build your own AI writing bot trained to sound just like you.</li><li>Use GPT-powered tools to fine-tune AI to replicate your unique tone and writing style.</li><li>Easily write blogs, social posts, emails, or scripts that feel personal and on-brand.</li></ul></div>
                 </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-robot"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Automate Workflows with AI and No-Code Platforms</h3>
-                        <p class="text-gray-500 text-sm">Create powerful automations without writing code</p>
-                    </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggle(this)">
+                        <div class="flex items-center gap-4"><i class="fas fa-cogs text-purple-600 text-xl"></i><span class="font-semibold">Automate Workflows with AI and No-Code Platforms</span></div>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-gray-50"><ul class="space-y-2 text-gray-600 text-sm"><li>Learn to build AI-driven automations using no-code platforms like Make.com.</li><li>Automate tasks like posting content on LinkedIn, sending follow-up emails, and updating databases.</li></ul></div>
                 </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-image"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Explore Image and Video Generation with AI</h3>
-                        <p class="text-gray-500 text-sm">Create stunning visuals using AI-powered tools</p>
-                    </div>
-                </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-code"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Build Digital Products without Code</h3>
-                        <p class="text-gray-500 text-sm">Launch your own AI-powered products and services</p>
-                    </div>
-                </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-chart-bar"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Use AI for Data Analysis and Decision-Making</h3>
-                        <p class="text-gray-500 text-sm">Make data-driven decisions with AI assistance</p>
-                    </div>
-                </div>
-                <div class="card-white p-5 rounded-xl flex items-start gap-4 hover-lift">
-                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-palette"></i></div>
-                    <div>
-                        <h3 class="font-bold text-gray-900 mb-1">Content Creation Using GenAI</h3>
-                        <p class="text-gray-500 text-sm">Create compelling content at scale with AI</p>
-                    </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggle(this)">
+                        <div class="flex items-center gap-4"><i class="fas fa-image text-purple-600 text-xl"></i><span class="font-semibold">Explore Image and Video Generation with AI</span></div>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-gray-50"><ul class="space-y-2 text-gray-600 text-sm"><li>Dive into AI-generated media with tools like MidJourney and Runway ML.</li><li>Create studio-quality images, social media visuals, short videos, and cinematic content with prompts.</li></ul></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bonuses Section -->
-    <section class="py-16 bg-gray-900 text-white px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">And Also Enjoy <span class="text-orange-400">Bonuses Worth ₹5000</span> for FREE!</h2>
+    <!-- Bonuses -->
+    <section class="py-16 bg-gradient-to-br from-purple-900 to-indigo-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">And Also Enjoy</h2>
+            <h2 class="text-3xl font-bold text-yellow-400 mb-8">Bonuses Worth ₹5000 for FREE!</h2>
             
-            <div class="grid md:grid-cols-2 gap-6 mt-10">
-                <div class="bg-gray-800 p-6 rounded-xl text-left border border-gray-700 hover-lift">
-                    <div class="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">1</div>
-                    <h3 class="text-xl font-bold mb-2">List of Gold-Standard and Hidden Prompts for GPT4</h3>
-                    <p class="text-gray-400">Unlock the most effective prompts used by experts</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-xl text-left border border-gray-700 hover-lift">
-                    <div class="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">2</div>
-                    <h3 class="text-xl font-bold mb-2">Copy-Paste Template To Using All in one AI tools like Simplified.com</h3>
-                    <p class="text-gray-400">Ready-to-use templates for instant implementation</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-xl text-left border border-gray-700 hover-lift">
-                    <div class="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">3</div>
-                    <h3 class="text-xl font-bold mb-2">Step by Step Method of Coding a Website with 0 prior knowledge in tech</h3>
-                    <p class="text-gray-400">Build websites even if you've never coded before</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-xl text-left border border-gray-700 hover-lift">
-                    <div class="bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mb-4">4</div>
-                    <h3 class="text-xl font-bold mb-2">Creating AI generated personas that provide you support of 10 humans using Synthesia</h3>
-                    <p class="text-gray-400">Create AI avatars that work for you 24/7</p>
-                </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6"><div class="bg-yellow-400 text-purple-900 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div><p class="font-semibold text-sm">List of Gold-Standard and Hidden Prompts for GPT4</p></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6"><div class="bg-yellow-400 text-purple-900 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div><p class="font-semibold text-sm">Copy-Paste Template To Using All in one AI tools like Simplified.com</p></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6"><div class="bg-yellow-400 text-purple-900 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div><p class="font-semibold text-sm">Step by Step Method of Coding a Website with 0 prior knowledge in tech</p></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6"><div class="bg-yellow-400 text-purple-900 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">4</div><p class="font-semibold text-sm">Creating AI generated personas using Synthesia</p></div>
             </div>
+            
+            <a href="#pricing" class="inline-block mt-10 bg-yellow-400 text-purple-900 px-10 py-4 rounded-full font-bold text-lg">Join Now</a>
         </div>
     </section>
 
-    <!-- Mentors Section -->
-    <section class="py-16 section-bg px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Learn from the top 1% in AI</h2>
+    <!-- Mentors -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-2">Learn from the top 1% in AI</h2>
             <p class="text-gray-600 mb-10">as They Guide You Through Cutting-Edge Tools—Transforming the Way You Work and Create</p>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover-lift">
-                    <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">V</div>
-                    <h3 class="text-xl font-bold text-gray-900">Vaibhav Sisinty</h3>
-                    <p class="text-purple-600 font-semibold mb-4">Growth Expert & AI Enthusiast</p>
-                    <p class="text-gray-600 text-sm">Founder of GrowthSchool, previously at Uber, Hotstar. Helping millions learn new skills.</p>
-                    <div class="flex justify-center gap-4 mt-4 text-gray-400">
-                        <i class="fab fa-linkedin text-xl"></i>
-                        <i class="fab fa-twitter text-xl"></i>
-                        <i class="fab fa-instagram text-xl"></i>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover-lift">
-                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">A</div>
-                    <h3 class="text-xl font-bold text-gray-900">Ankit Pratap</h3>
-                    <p class="text-purple-600 font-semibold mb-4">AI & Product Expert</p>
-                    <p class="text-gray-600 text-sm">Ex-Google, built AI products used by millions. Passionate about democratizing AI education.</p>
-                    <div class="flex justify-center gap-4 mt-4 text-gray-400">
-                        <i class="fab fa-linkedin text-xl"></i>
-                        <i class="fab fa-twitter text-xl"></i>
-                        <i class="fab fa-youtube text-xl"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12">
-                <p class="text-gray-500 mb-4">HEAR IT FROM THEM</p>
-                <div class="bg-gray-900 rounded-2xl p-8 max-w-3xl mx-auto">
-                    <p class="text-white text-lg italic">"See what's possible here"</p>
-                    <div class="mt-4 flex justify-center">
-                        <button class="bg-white text-gray-900 px-6 py-2 rounded-full font-semibold flex items-center gap-2">
-                            <i class="fas fa-play"></i> Watch Video
-                        </button>
-                    </div>
-                </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"><h3 class="font-bold">Raghuveer Nishthala</h3><p class="text-gray-500 text-sm">Brand Marketer</p></div>
+                <div><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"><h3 class="font-bold">Shantanu Tungare</h3><p class="text-gray-500 text-sm">AI Film Maker</p></div>
+                <div><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"><h3 class="font-bold">Vaibhav Sisinty</h3><p class="text-gray-500 text-sm">Founder - GrowthSchool</p></div>
+                <div><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"><h3 class="font-bold">KVS Dileep</h3><p class="text-gray-500 text-sm">Head of AI Initiatives</p></div>
             </div>
         </div>
     </section>
 
     <!-- Why GrowthSchool -->
-    <section class="py-16 purple-gradient text-white px-4">
-        <div class="max-w-5xl mx-auto text-center">
+    <section class="py-16 bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Why GrowthSchool?</h2>
             <p class="text-xl opacity-90 mb-10">GrowthSchool is where you become the Top 1% in your field. We bring the best of Product, Growth, Design, Tech, Data and Business mentors from brands like Google, Meta, Uber etc doing the jobs you want to do tomorrow.</p>
             
-            <div class="grid md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                    <p class="text-4xl font-bold mb-2">4.7/5</p>
-                    <p class="text-purple-200">Trustpilot Rating</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                    <p class="text-4xl font-bold mb-2">10.2M+</p>
-                    <p class="text-purple-200">Global Learners</p>
-                </div>
-            </div>
-            
-            <div class="mt-8">
-                <p class="text-purple-200 mb-4">Backed by the best</p>
-                <div class="flex flex-wrap justify-center gap-8 opacity-60">
-                    <span class="text-xl font-bold">Google</span>
-                    <span class="text-xl font-bold">Meta</span>
-                    <span class="text-xl font-bold">Uber</span>
-                    <span class="text-xl font-bold">Amazon</span>
-                </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl"><p class="text-4xl font-bold mb-2">4.7/5</p><p class="opacity-80">Trustpilot Rating</p></div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl"><p class="text-4xl font-bold mb-2">10.2M+</p><p class="opacity-80">Global Learners</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="register" class="py-16 section-bg px-4">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">ChatGPT for Professionals Workshop</h2>
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">ChatGPT for Professionals Workshop</h2>
             
-            <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 mt-8 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 rounded-bl-lg font-semibold">90% OFF</div>
-                
+            <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-xl border border-purple-100">
                 <div class="flex items-center justify-center gap-4 mb-6">
-                    <p class="text-4xl font-bold text-gray-400 line-through">₹1,999</p>
                     <p class="text-5xl font-bold text-purple-600">₹199</p>
+                    <p class="text-2xl text-gray-400 line-through">₹1,999</p>
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-semibold text-sm">Save 90%</span>
                 </div>
                 
-                <p class="text-gray-500 mb-6">Deadline 15 February 2026</p>
+                <p class="text-gray-600 mb-6">Register now and get our bestselling workshop at 100% that includes:</p>
                 
-                <a href="#" class="block purple-gradient text-white py-4 rounded-xl font-bold text-lg hover-lift shadow-lg">
-                    Enroll Now →
-                </a>
+                <ul class="text-left space-y-3 mb-8 max-w-sm mx-auto">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> ₹2000 worth of course content on leveraging AI & ChatGPT</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> ₹5000 in bonuses to help you become an AI-powered professional</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> ₹2300 access pass to a global community</li>
+                </ul>
                 
-                <p class="text-gray-500 text-sm mt-4 flex items-center justify-center gap-2">
-                    <i class="fas fa-shield-alt text-green-500"></i> 100% Money-back guarantee
-                </p>
+                <a href="#" class="block bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-xl font-bold text-lg">Join Now</a>
+                
+                <p class="text-gray-500 text-sm mt-4">Deadline 16 February 2026</p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-16 bg-white px-4">
-        <div class="max-w-4xl mx-auto">
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
             
             <div class="space-y-4">
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>What is ChatGPT, and how can it benefit my business?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">ChatGPT is an AI language model that can automate tasks, improve efficiency, and enhance customer engagement.</div>
-                </div>
+                <div class="border-b border-gray-200 pb-4"><button class="w-full text-left flex items-center justify-between" onclick="toggle(this)"><span class="font-semibold">What is ChatGPT, and how can it benefit my business?</span><i class="fas fa-plus text-gray-400"></i></button><p class="hidden mt-3 text-gray-600">ChatGPT is an AI language model that can automate tasks, improve efficiency, and enhance customer engagement.</p></div>
                 
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>Can I expect hands-on training and practical examples during the workshop?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">Yes, the workshop includes hands-on training with practical examples.</div>
-                </div>
+                <div class="border-b border-gray-200 pb-4"><button class="w-full text-left flex items-center justify-between" onclick="toggle(this)"><span class="font-semibold">Can I expect hands-on training?</span><i class="fas fa-plus text-gray-400"></i></button><p class="hidden mt-3 text-gray-600">Yes, the workshop includes hands-on training with practical examples.</p></div>
                 
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>How can ChatGPT help me save time and resources in my business operations?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">ChatGPT saves time and resources by automating content creation, customer support, and data analysis.</div>
-                </div>
+                <div class="border-b border-gray-200 pb-4"><button class="w-full text-left flex items-center justify-between" onclick="toggle(this)"><span class="font-semibold">Will this be live or pre-recorded?</span><i class="fas fa-plus text-gray-400"></i></button><p class="hidden mt-3 text-gray-600">This is an Interactive GrowthSchool experience where you will be learning practical concepts taught by your mentor with polls, quizzes, and exciting activities.</p></div>
                 
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>What kind of support and resources will be available to me after the workshop?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">Post-workshop support includes access to resources, community forums, and email support.</div>
-                </div>
+                <div class="border-b border-gray-200 pb-4"><button class="w-full text-left flex items-center justify-between" onclick="toggle(this)"><span class="font-semibold">Would there be any certificate on completion?</span><i class="fas fa-plus text-gray-400"></i></button><p class="hidden mt-3 text-gray-600">Yes! You will receive a certificate on completion if you attend the entire live session.</p></div>
                 
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>When does the workshop start?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">You can find all the details regarding the workshop dates and timings on the top of the page.</div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>Will this be live or pre-recorded?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">No, this is not a live session but even better! This is an Interactive GrowthSchool experience where you will be learning practical concepts with your mentor, participating in polls, quizzes, and exciting activities.</div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>Would there be any certificate on completion?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">Yes! You will receive a certificate on completion if you attend the entire live session.</div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-white hover:bg-gray-50 transition" onclick="toggleFAQ(this)">
-                        <span>What is the timezone?</span>
-                        <span class="text-purple-600">+</span>
-                    </button>
-                    <div class="hidden px-6 py-4 bg-gray-50 text-gray-600">It is IST (Indian Standard Time).</div>
-                </div>
+                <div class="border-b border-gray-200 pb-4"><button class="w-full text-left flex items-center justify-between" onclick="toggle(this)"><span class="font-semibold">What is the timezone?</span><i class="fas fa-plus text-gray-400"></i></button><p class="hidden mt-3 text-gray-600">It is IST (Indian Standard Time).</p></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-4">
-        <div class="max-w-5xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Growth<span class="text-purple-500">School</span></h3>
-                    <p class="text-sm">Empowering professionals with cutting-edge skills for the future.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white mb-4">Support</h4>
-                    <p class="text-sm mb-2">hi@growthschool.io</p>
-                    <p class="text-sm">Response within 6 hours</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-white mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition">Refund Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>© 2026 GrowthSchool. All rights reserved.</p>
-            </div>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-sm">Company Address: 4th Floor Urban Vault 145, 5th Main Rd, Sector 6, HSR Layout, Bengaluru, Karnataka, 560102</p>
+            <p class="text-sm mt-2">Phone number: +91 9513392677</p>
         </div>
     </footer>
 
     <script>
-        function toggleFAQ(btn) {
+        function toggle(btn) {
             const content = btn.nextElementSibling;
-            const icon = btn.querySelector('.text-purple-600');
+            const icon = btn.querySelector('i:last-child');
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
-                icon.textContent = '-';
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
             } else {
                 content.classList.add('hidden');
-                icon.textContent = '+';
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
             }
         }
     </script>
