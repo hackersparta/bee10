@@ -5,70 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Hours Live AI Tools Workshop - Be10X</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .hero-gradient {
-            background: linear-gradient(180deg, #F8FAFC 0%, #E2E8F0 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-primary { background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); transition: all 0.3s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .yellow-gradient { background: linear-gradient(135deg, #f5af19 0%, #f12711 100%); }
+        .green-gradient { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+        .section-padding { padding: 80px 0; }
+        .heading-gradient { background: linear-gradient(90deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .mentor-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #667eea; }
+        .rating-stars { color: #ffc107; }
+        .countdown-box { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
+        .review-card { background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%); }
     </style>
 </head>
 <body class="bg-white">
+    <!-- Top Bar -->
+    <div class="bg-gray-100 py-2 text-center text-sm text-gray-600">
+        <p>🎓 India's Most Trusted AI Workshop | 📚 25,000+ Students Trained</p>
+    </div>
+
     <!-- Header -->
-    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm fixed w-full z-50">
-        <div class="flex items-center">
-            <span class="text-2xl font-bold gradient-text">Be10X</span>
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold gradient-text">Be10X</a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-medium transition">AI Tools Workshop</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-medium transition">AI Tool of the Day</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-medium transition">Blogs</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-medium transition">About Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">My Account</a>
+                <a href="#register" class="btn-primary text-white px-6 py-2 rounded-full font-semibold">Join Now</a>
+            </div>
         </div>
-        <div class="hidden md:flex items-center gap-6">
-            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">AI Tools Workshop</a>
-            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">AI Tool of the Day</a>
-            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">Blogs</a>
-            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">About Us</a>
-        </div>
-        <button class="bg-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-700 transition">
-            My Account
-        </button>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero-gradient pt-28 pb-16 px-4">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        Unlock the Power of <span class="gradient-text">AI Tools</span> for Smarter Work
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">LIVE WORKSHOP</span>
+                        <span class="text-purple-600 font-semibold">3 Hours Only!</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Unlock the Power of <span class="heading-gradient">AI Tools</span> for Smarter Work
                     </h1>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Learn to use top AI tools for everyday tasks — no prior experience required!
-                    </p>
+                    <p class="text-lg text-gray-600 mb-6">Learn to use top AI tools for everyday tasks — no prior experience required!</p>
                     <div class="flex flex-wrap gap-3 mb-6">
-                        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
-                            ✓ No coding skills required
+                        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="fas fa-check"></i> No coding skills required
                         </span>
-                        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold">
-                            ✓ Learn practical AI applications
+                        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                            <i class="fas fa-check"></i> Learn practical AI applications
                         </span>
                     </div>
-                    <div class="bg-yellow-400 text-black px-6 py-4 rounded-xl inline-block mb-6">
-                        <p class="font-bold text-lg">🎁 Bonuses Worth Rs. 10,500 if you Register before Midnight!</p>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="countdown-box text-white px-4 py-2 rounded-lg text-center">
+                            <p class="text-2xl font-bold" id="days">02</p>
+                            <p class="text-xs">Days</p>
+                        </div>
+                        <div class="countdown-box text-white px-4 py-2 rounded-lg text-center">
+                            <p class="text-2xl font-bold" id="hours">12</p>
+                            <p class="text-xs">Hours</p>
+                        </div>
+                        <div class="countdown-box text-white px-4 py-2 rounded-lg text-center">
+                            <p class="text-2xl font-bold" id="minutes">45</p>
+                            <p class="text-xs">Minutes</p>
+                        </div>
+                        <div class="countdown-box text-white px-4 py-2 rounded-lg text-center">
+                            <p class="text-2xl font-bold" id="seconds">30</p>
+                            <p class="text-xs">Seconds</p>
+                        </div>
                     </div>
+                    
+                    <div class="yellow-gradient text-black px-6 py-4 rounded-xl inline-block mb-6">
+                        <p class="font-bold text-lg flex items-center gap-2">
+                            <i class="fas fa-gift"></i> Bonuses Worth ₹10,500 if you Register before Midnight!
+                        </p>
+                    </div>
+                    
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#register" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg text-center hover:opacity-90 transition shadow-lg">
+                        <a href="#register" class="btn-primary text-white px-8 py-4 rounded-full font-bold text-lg text-center shadow-lg">
                             Reserve Your Seat Now! →
                         </a>
+                        <p class="text-gray-500 text-sm flex items-center"><i class="fas fa-users mr-2"></i> 25,000+ students enrolled</p>
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="AI Workshop" class="rounded-2xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600" alt="AI Workshop" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <p class="text-3xl font-bold text-purple-600">4.9★</p>
+                        <p class="text-gray-600 text-sm">Rating Score</p>
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full font-bold shadow-lg">
+                        ₹9 Only!
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,184 +119,211 @@
 
     <!-- Featured In -->
     <section class="py-8 bg-white border-b">
-        <div class="max-w-6xl mx-auto px-4">
-            <p class="text-center text-gray-500 mb-4">Featured in</p>
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-gray-500 mb-6">Featured in</p>
             <div class="flex flex-wrap justify-center items-center gap-12 opacity-60">
-                <span class="text-2xl font-bold text-gray-400">FORBES</span>
-                <span class="text-2xl font-bold text-gray-400">TechCrunch</span>
-                <span class="text-2xl font-bold text-gray-400">YourStory</span>
-                <span class="text-2xl font-bold text-gray-400">Inc42</span>
+                <span class="text-2xl font-bold text-gray-400 uppercase tracking-wider">Forbes</span>
+                <span class="text-2xl font-bold text-gray-400 uppercase tracking-wider">TechCrunch</span>
+                <span class="text-2xl font-bold text-gray-400 uppercase tracking-wider">YourStory</span>
+                <span class="text-2xl font-bold text-gray-400 uppercase tracking-wider">Inc42</span>
             </div>
         </div>
     </section>
 
-    <!-- Rating Section -->
-    <section class="py-12 bg-white">
+    <!-- Stats Section -->
+    <section class="py-12 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4"><p class="text-4xl md:text-5xl font-bold mb-2">25,000+</p><p class="text-lg opacity-90">Students Trained</p></div>
+                <div class="p-4"><p class="text-4xl md:text-5xl font-bold mb-2">150+</p><p class="text-lg opacity-90">AI Tools Covered</p></div>
+                <div class="p-4"><p class="text-4xl md:text-5xl font-bold mb-2">4.9★</p><p class="text-lg opacity-90">Average Rating</p></div>
+                <div class="p-4"><p class="text-4xl md:text-5xl font-bold mb-2">98%</p><p class="text-lg opacity-90">Satisfaction Rate</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ratings -->
+    <section class="py-12 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-8">#1 🇮🇳 We're highest rated program in the world 🌎</h2>
             <div class="flex flex-wrap justify-center gap-8">
-                <div class="bg-green-50 px-8 py-6 rounded-2xl">
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover cursor-pointer">
                     <div class="flex items-center gap-2 mb-2">
-                        <span class="text-4xl">⭐</span>
-                        <span class="text-4xl font-bold text-green-600">4.9</span>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
                     </div>
+                    <p class="text-3xl font-bold text-gray-800">4.9/5</p>
                     <p class="text-gray-600">Based on 2,500+ reviews</p>
+                    <p class="text-purple-600 font-semibold mt-2">Google Reviews</p>
                 </div>
-                <div class="bg-blue-50 px-8 py-6 rounded-2xl flex items-center gap-4">
-                    <div>
-                        <p class="text-4xl font-bold text-blue-600">ISO</p>
-                        <p class="text-gray-600">Certified</p>
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover cursor-pointer">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
+                        <i class="fas fa-star rating-stars"></i>
                     </div>
+                    <p class="text-3xl font-bold text-gray-800">4.9/5</p>
+                    <p class="text-gray-600">Based on 2,500+ reviews</p>
+                    <p class="text-purple-600 font-semibold mt-2">Trustpilot</p>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-center">
+                <div class="bg-blue-100 px-6 py-3 rounded-full flex items-center gap-2">
+                    <i class="fas fa-certificate text-blue-600"></i>
+                    <span class="font-semibold text-blue-600">ISO Certified</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Join Section -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section class="section-padding bg-white px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-4">Why join this course?</h2>
-            <p class="text-center text-gray-600 mb-12">🤷🏻‍♂️</p>
+            <p class="text-center text-gray-500 mb-12 text-2xl">🤷🏻‍♂️</p>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-4 text-red-600">⚠️ Job Market Reality</h3>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-red-100">
+                    <h3 class="text-xl font-bold mb-4 text-red-600 flex items-center gap-2">
+                        <i class="fas fa-exclamation-triangle"></i> Job Market Reality
+                    </h3>
                     <p class="text-gray-600 mb-4">Total job losses predicted by top companies because of AI</p>
                     <div class="grid grid-cols-3 gap-4">
-                        <div class="bg-red-50 p-4 rounded-xl text-center">
-                            <p class="text-2xl font-bold text-red-600">30 Crore</p>
-                            <p class="text-sm text-gray-500">Job Losses</p>
-                        </div>
-                        <div class="bg-red-50 p-4 rounded-xl text-center">
-                            <p class="text-2xl font-bold text-red-600">40 Crore</p>
-                            <p class="text-sm text-gray-500">Job Losses</p>
-                        </div>
-                        <div class="bg-red-50 p-4 rounded-xl text-center">
-                            <p class="text-2xl font-bold text-red-600">8.3 Crore</p>
-                            <p class="text-sm text-gray-500">By 2027</p>
-                        </div>
+                        <div class="bg-red-50 p-4 rounded-xl text-center"><p class="text-2xl font-bold text-red-600">30 Crore</p><p class="text-sm text-gray-500">Job Losses</p></div>
+                        <div class="bg-red-50 p-4 rounded-xl text-center"><p class="text-2xl font-bold text-red-600">40 Crore</p><p class="text-sm text-gray-500">Job Losses</p></div>
+                        <div class="bg-red-50 p-4 rounded-xl text-center"><p class="text-2xl font-bold text-red-600">8.3 Crore</p><p class="text-sm text-gray-500">By 2027</p></div>
                     </div>
                 </div>
                 
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-4 text-green-600">📈 Rise in AI-related jobs</h3>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-green-100">
+                    <h3 class="text-xl font-bold mb-4 text-green-600 flex items-center gap-2">
+                        <i class="fas fa-chart-line"></i> Rise in AI-related jobs
+                    </h3>
                     <p class="text-gray-600 mb-6">Jobs are moving towards AI enabled people, become AI enabled today.</p>
-                    <a href="#register" class="block text-center bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition">
-                        Accelerate Your Career! 🚀
-                    </a>
-                    <p class="text-center text-gray-500 mt-4">At price of less than a chai ☕!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Banner -->
-    <section class="py-8 gradient-bg text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <p class="text-5xl font-bold">150+</p>
-                    <p class="text-lg">AI Tools Covered</p>
-                </div>
-                <div>
-                    <p class="text-5xl font-bold">3 Hours</p>
-                    <p class="text-lg">Live Workshop</p>
-                </div>
-                <div>
-                    <p class="text-5xl font-bold">₹9</p>
-                    <p class="text-lg">Special Price!</p>
+                    <a href="#register" class="block text-center green-gradient text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition">🚀 Accelerate Your Career!</a>
+                    <p class="text-center text-gray-500 mt-4 flex items-center justify-center gap-2"><i class="fas fa-coffee"></i> At price of less than a chai ☕!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- What You'll Learn -->
-    <section class="py-16 px-4 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">What You'll Learn</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">🤖</span>
-                    <p>ChatGPT and other AI tools for productivity</p>
-                </div>
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">⚡</span>
-                    <p>Automate repetitive tasks with AI</p>
-                </div>
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">📊</span>
-                    <p>AI-powered data analysis and insights</p>
-                </div>
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">✍️</span>
-                    <p>Content creation with AI tools</p>
-                </div>
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">🎯</span>
-                    <p>Build AI-powered workflows</p>
-                </div>
-                <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">
-                    <span class="text-2xl">💼</span>
-                    <p>Career growth with AI skills</p>
-                </div>
+    <section class="section-padding bg-gray-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">What You'll Learn</h2>
+            <p class="text-center text-gray-500 mb-12">Master these AI skills in just 3 hours!</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">🤖</div><h3 class="text-xl font-bold mb-2">ChatGPT Mastery</h3><p class="text-gray-600">Learn to use ChatGPT and other AI tools for productivity and content creation.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">⚡</div><h3 class="text-xl font-bold mb-2">Automation Skills</h3><p class="text-gray-600">Automate repetitive tasks with AI and save 10+ hours every week.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">📊</div><h3 class="text-xl font-bold mb-2">Data Analysis</h3><p class="text-gray-600">AI-powered data analysis and insights for better decision making.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">✍️</div><h3 class="text-xl font-bold mb-2">Content Creation</h3><p class="text-gray-600">Create blogs, social media content, and marketing materials with AI.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">🎯</div><h3 class="text-xl font-bold mb-2">Workflow Building</h3><p class="text-gray-600">Build AI-powered workflows that run automatically.</p></div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover"><div class="text-4xl mb-4">💼</div><h3 class="text-xl font-bold mb-2">Career Growth</h3><p class="text-gray-600">Use AI skills to advance your career and increase income.</p></div>
             </div>
         </div>
     </section>
 
     <!-- Bonuses -->
-    <section class="py-16 px-4 gradient-bg text-white">
+    <section class="section-padding gradient-bg text-white px-4">
         <div class="max-w-6xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">🎁 Get Valuable Learning Bonuses!</h2>
             <p class="text-xl mb-12 opacity-90">When you enroll in this workshop!</p>
+            
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover transition duration-300">
-                    <div class="text-6xl mb-4">📚</div>
-                    <h3 class="text-xl font-bold mb-2">150+ Productivity Hacks</h3>
-                    <p class="text-purple-600 font-bold text-lg">Worth ₹5000</p>
+                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover">
+                    <div class="text-6xl mb-4">📚</div><h3 class="text-xl font-bold mb-2">150+ Productivity Hacks</h3><p class="text-purple-600 font-bold text-lg">Worth ₹5000</p><p class="text-gray-600 mt-4">Easy to implement hacks to boost your daily productivity.</p>
                 </div>
-                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover transition duration-300">
-                    <div class="text-6xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold mb-2">800+ Premium PPT Templates</h3>
-                    <p class="text-purple-600 font-bold text-lg">Worth ₹3000</p>
+                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover">
+                    <div class="text-6xl mb-4">📊</div><h3 class="text-xl font-bold mb-2">800+ Premium PPT Templates</h3><p class="text-purple-600 font-bold text-lg">Worth ₹3000</p><p class="text-gray-600 mt-4">Professional templates for presentations and reports.</p>
                 </div>
-                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover transition duration-300">
-                    <div class="text-6xl mb-4">📖</div>
-                    <h3 class="text-xl font-bold mb-2">Ebook on Time Management</h3>
-                    <p class="text-purple-600 font-bold text-lg">Worth ₹2500</p>
+                <div class="bg-white text-gray-800 p-8 rounded-2xl card-hover">
+                    <div class="text-6xl mb-4">📖</div><h3 class="text-xl font-bold mb-2">Ebook on Time Management</h3><p class="text-purple-600 font-bold text-lg">Worth ₹2500</p><p class="text-gray-600 mt-4">Master your time and accomplish more every day.</p>
                 </div>
+            </div>
+            
+            <div class="mt-12 bg-yellow-400 text-black px-8 py-4 rounded-xl inline-block">
+                <p class="font-bold text-xl">🎉 Total Bonus Value: ₹10,500 FREE!</p>
             </div>
         </div>
     </section>
 
     <!-- Mentors -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section class="section-padding bg-white px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Know Your Mentors</h2>
+            <h2 class="text-3xl font-bold text-center mb-4">Know Your Mentors</h2>
+            <p class="text-center text-gray-500 mb-12">Learn from IIT Kharagpur Alumni who built 8-figure companies with AI</p>
+            
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Mentor 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <div class="flex items-start gap-6">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150" alt="Aditya Goenka" class="w-24 h-24 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200" alt="Aditya Goenka" class="mentor-img">
                         <div>
                             <h3 class="text-xl font-bold mb-1">ADITYA GOENKA</h3>
                             <p class="text-purple-600 mb-3">IIT Kharagpur Alumni 2019</p>
                             <p class="text-gray-600 mb-3">Built 2 eight-figure companies with the help of AI tools and a super efficient team of just 5 people.</p>
-                            <p class="text-sm text-gray-500">Internships at Stanford University, UIUC, etc.</p>
+                            <p class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-briefcase"></i> Internships at Stanford University, UIUC, etc.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Mentor 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                     <div class="flex items-start gap-6">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150" alt="Aditya Kachave" class="w-24 h-24 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200" alt="Aditya Kachave" class="mentor-img">
                         <div>
                             <h3 class="text-xl font-bold mb-1">ADITYA KACHAVE</h3>
                             <p class="text-purple-600 mb-3">IIT Kharagpur Graduate</p>
                             <p class="text-gray-600 mb-3">Highest package (INR 1.2 cr) in India as a fresher. Built 2 eight-figure companies with AI tools.</p>
-                            <p class="text-sm text-gray-500">Years of experience in educational industry</p>
+                            <p class="text-sm text-gray-500 flex items-center gap-2"><i class="fas fa-graduation-cap"></i> Years of experience in educational industry</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-gray-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">What Students Say</h2>
+            <p class="text-center text-gray-500 mb-12">Real reviews from real students</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="review-card p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"This workshop changed my career! I now use AI tools daily and have doubled my productivity. Best investment ever!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=50" alt="Student" class="w-12 h-12 rounded-full object-cover">
+                        <div><p class="font-semibold">Rahul Sharma</p><p class="text-sm text-gray-500">Software Engineer</p></div>
+                    </div>
+                </div>
+                
+                <div class="review-card p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Amazing session! The mentors explained everything so clearly. I created my first AI-powered workflow within hours!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50" alt="Student" class="w-12 h-12 rounded-full object-cover">
+                        <div><p class="font-semibold">Priya Patel</p><p class="text-sm text-gray-500">Marketing Manager</p></div>
+                    </div>
+                </div>
+                
+                <div class="review-card p-6 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i><i class="fas fa-star rating-stars"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Worth every penny! The bonuses alone are worth more than the course price. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50" alt="Student" class="w-12 h-12 rounded-full object-cover">
+                        <div><p class="font-semibold">Amit Kumar</p><p class="text-sm text-gray-500">Business Owner</p></div>
                     </div>
                 </div>
             </div>
@@ -261,41 +331,55 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="register" class="py-20 px-4 hero-gradient">
-        <div class="max-w-3xl mx-auto text-center">
+    <section id="register" class="section-padding hero-gradient px-4">
+        <div class="max-w-3xl mx-auto text-center text-white">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Time is running out. Reserve your seat now!</h2>
-            <p class="text-xl text-gray-600 mb-4">CURRENTLY THE WORKSHOP IS FOR JUST <span class="font-bold text-yellow-600">₹9</span> (less than a CHOCOLATE)</p>
-            <p class="text-lg text-red-500 font-bold mb-8">⚠️ BUT PRICES CAN INCREASE ANYTIME!</p>
-            <a href="#" class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-10 py-5 rounded-full font-bold text-xl hover:opacity-90 transition shadow-xl mb-8">
+            <p class="text-xl mb-4 opacity-90">CURRENTLY THE WORKSHOP IS FOR JUST <span class="font-bold text-yellow-400 text-2xl">₹9</span> (less than a CHOCOLATE)</p>
+            <p class="text-lg mb-8 text-yellow-400 font-bold">⚠️ BUT PRICES CAN INCREASE ANYTIME!</p>
+            
+            <a href="#" class="inline-block bg-yellow-400 text-black px-10 py-5 rounded-full font-bold text-xl hover:bg-yellow-500 transition shadow-xl mb-8">
                 👆 Click Here to Reserve Your Seat Now!!!
             </a>
-            <div class="bg-white p-6 rounded-xl inline-block">
-                <p class="font-bold mb-2">Get a certification of the workshop</p>
-                <p class="text-gray-600">Certified by AI Tools Expert Trainers</p>
+            
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl inline-block">
+                <p class="font-bold mb-2 text-lg">🎓 Get a certification of the workshop</p>
+                <p class="opacity-80">Certified by AI Tools Expert Trainers</p>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="py-16 px-4 bg-white">
+    <section class="section-padding bg-white px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
             <div class="space-y-4">
-                <div class="border border-gray-200 rounded-xl p-6">
-                    <h3 class="font-bold mb-2">Is this workshop for beginners?</h3>
-                    <p class="text-gray-600">Yes! This workshop is designed for complete beginners. No prior experience required.</p>
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Is this workshop for beginners?</span><i class="fas fa-chevron-down text-purple-600"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden"><p class="text-gray-600">Yes! This workshop is designed for complete beginners. No prior experience required.</p></div>
                 </div>
-                <div class="border border-gray-200 rounded-xl p-6">
-                    <h3 class="font-bold mb-2">Do I need coding skills?</h3>
-                    <p class="text-gray-600">No coding skills required. Learn practical AI applications that anyone can use.</p>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Do I need coding skills?</span><i class="fas fa-chevron-down text-purple-600"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden"><p class="text-gray-600">No coding skills required. Learn practical AI applications that anyone can use.</p></div>
                 </div>
-                <div class="border border-gray-200 rounded-xl p-6">
-                    <h3 class="font-bold mb-2">Will I get a certificate?</h3>
-                    <p class="text-gray-600">Yes! You'll receive a certificate from AI Tools Expert Trainers.</p>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Will I get a certificate?</span><i class="fas fa-chevron-down text-purple-600"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden"><p class="text-gray-600">Yes! You'll receive a certificate from AI Tools Expert Trainers.</p></div>
                 </div>
-                <div class="border border-gray-200 rounded-xl p-6">
-                    <h3 class="font-bold mb-2">What if I miss the workshop?</h3>
-                    <p class="text-gray-600">We recommend attending live for the best experience. Recordings may be available.</p>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left font-semibold flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition">
+                        <span>What if I miss the workshop?</span><i class="fas fa-chevron-down text-purple-600"></i>
+                    </button>
+                    <div class="px-6 py-4 hidden"><p class="text-gray-600">We recommend attending live for the best experience. Recordings may be available.</p></div>
                 </div>
             </div>
         </div>
@@ -305,38 +389,55 @@
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 gradient-text">Be10X</h3>
-                    <p class="text-gray-400">Empowering professionals with AI-Driven skills for the future.</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Company</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">About Us</a></li>
-                        <li><a href="#" class="hover:text-white">Teach with Us</a></li>
-                        <li><a href="#" class="hover:text-white">Grow With Us</a></li>
-                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Support</h4>
-                    <p class="text-gray-400">+91-9147330989</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Workshop</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">AI Tools Workshop</a></li>
-                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white">Terms of use</a></li>
-                        <li><a href="#" class="hover:text-white">Refund Policy</a></li>
-                    </ul>
-                </div>
+                <div><h3 class="text-2xl font-bold gradient-text mb-4">Be10X</h3><p class="text-gray-400">Empowering professionals with AI-Driven skills for the future.</p></div>
+                <div><h4 class="font-bold mb-4">Company</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">About Us</a></li><li><a href="#" class="hover:text-white transition">Teach with Us</a></li><li><a href="#" class="hover:text-white transition">Contact Us</a></li></ul></div>
+                <div><h4 class="font-bold mb-4">Support</h4><p class="text-gray-400">+91-9147330989</p><p class="text-gray-400">support@be10x.com</p></div>
+                <div><h4 class="font-bold mb-4">Workshop</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Privacy Policy</a></li><li><a href="#" class="hover:text-white transition">Terms of use</a></li><li><a href="#" class="hover:text-white transition">Refund Policy</a></li></ul></div>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>Company Address: 6th Floor, DN24, Matrix Tower, Space Number 1003, Salt Lake, Sector 5, Kolkata – 700091</p>
+                <p>Company Address: 6th Floor, DN24, Matrix Tower, Salt Lake, Sector 5, Kolkata – 700091</p>
                 <p class="mt-2">Copyright © 2026 Be10x. All rights reserved</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date();
+        countdownDate.setDate(countdownDate.getDate() + 2);
+        countdownDate.setHours(countdownDate.getHours() + 12);
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate.getTime() - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // FAQ Toggle
+        document.querySelectorAll('.border button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.fa-chevron-down');
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
